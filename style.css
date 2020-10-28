@@ -1,0 +1,44 @@
+body{
+    width:30vw;
+    height: 30vw;
+    overflow: hidden;
+    background:white;
+
+}
+
+.ball{
+    position: relative;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 250px;
+	border: 10px solid blue;
+	background-color:blue;
+    top: 50%;
+    left: 50%;
+    animation: bounce 1s;
+    animation-iteration-count:infinite;
+}
+
+
+
+@keyframes bounce {
+	0% {top: 0;
+		-webkit-animation-timing-function: ease-in;
+	}
+	40% {}
+	50% {top: 100;
+		-webkit-animation-timing-function: ease-out;
+	}
+	55% { 
+		-webkit-animation-timing-function: ease-in;}
+	65% {
+		-webkit-animation-timing-function: ease-out;}
+	95% {
+		top: 0;		
+		-webkit-animation-timing-function: ease-in;
+	}
+	100% {top: 0;
+		-webkit-animation-timing-function: ease-in;
+	}
+}
